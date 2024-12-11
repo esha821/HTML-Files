@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header,.footer{
+    width: 100%;
+    height:90px;
+    background-color: aquamarine;
+    border: 2px solid brown;
+}
+/* .main{
+    width: 100%;
+    height: 1300px;
+     background-color: aqua; 
+} */
+.layout{
+    width: 100%;
+    height: 400px;
+    background:bisque url(food.jpeg) center center/cover no-repeat;
+
+}
+.main1{
+    display: flex;
+    width:100%;
+    height: 600px;
+}
+.sub-main{
+    width: 33%;
+    background-color: cadetblue;
+    margin: 5px;
+
+}
+/* Responsiveness */
+/* for tablet */
+@media all and (max-width:768px) {
+    .main{
+        height: 1400px;
+    }
+    .main1{
+        display: flex;
+        flex-direction:column;
+        /* flex-wrap: wrap; */
+        height: 1000px;
+        
+       
+    }
+    .sub-main{
+        width: 100%;
+        background-color: cadetblue;
+        margin: 5px;
+        height:350px ;
+        display: flex;
+    
+    }
+    .sub-main img{
+        height: 100%;
+        width: 50%;
+    }
+  
+}
+@media all and (max-width:576px) {
+    .main{
+        height: 1880px;
+    }
+    .main1{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-main{
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+    }
+    .sub-main img{
+        width: 100%;
+        
+    }
+
+    
+}
+
